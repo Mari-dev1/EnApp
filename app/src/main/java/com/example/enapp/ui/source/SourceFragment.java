@@ -1,4 +1,4 @@
-package com.example.enapp.ui.slideshow;
+package com.example.enapp.ui.source;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -14,23 +14,23 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.enapp.databinding.FragmentSlideshowBinding;
+import com.example.enapp.databinding.FragmentSourceBinding;
 
-public class SlideshowFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+public class SourceFragment extends Fragment {
+    private FragmentSourceBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        SourceViewModel sourceViewModel =
+                new ViewModelProvider(this).get(SourceViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentSourceBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final WebView exportWebView = binding.idWebviewExport;
-        final ProgressBar loadingPB = binding.idLod;
-        exportWebView.loadUrl("https://sites.google.com/view/greatdataca/energy-situation-and-air-pollution-in-kazakhstan");
+        final WebView exportWebView = binding.idWebviewSource;
+        final ProgressBar loadingPB = binding.idSource;
+        exportWebView.loadUrl("https://sites.google.com/view/greatdataca/sources?authuser=0");
         exportWebView.setWebViewClient(new WebViewClient(){
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
@@ -69,3 +69,4 @@ public class SlideshowFragment extends Fragment {
         binding = null;
     }
 }
+

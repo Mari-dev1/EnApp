@@ -16,5 +16,17 @@ tools:showIn="navigation_view">
         android:id="@+id/nav_slideshow"
         android:icon="@drawable/ic_export"
         android:title="@string/menu_export" />
+
+    <item
+        android:id="@+id/nav_work"
+        android:icon="@drawable/ic_country"
+        android:title="@string/menu_use" />
+
+    <item
+        android:id="@+id/nav_source"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="@string/menu_source" />
+
+
 </group>
 </menu>
