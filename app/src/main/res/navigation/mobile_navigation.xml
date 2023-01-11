@@ -12,6 +12,13 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/nav_air"
+        android:name="com.example.enapp.ui.airpollution.AirFragment"
+        android:label="@string/menu_land"
+        tools:layout="@layout/fragment_air" />
+
+
+    <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.enapp.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"

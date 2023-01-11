@@ -9,6 +9,11 @@ tools:showIn="navigation_view">
         android:icon="@drawable/ic_country"
         android:title="@string/menu_country" />
     <item
+        android:id="@+id/nav_kg"
+        android:icon="@drawable/ic_air"
+        android:title="@string/menu_land" />
+
+    <item
         android:id="@+id/nav_gallery"
         android:icon="@drawable/ic_import"
         android:title="@string/menu_import" />
