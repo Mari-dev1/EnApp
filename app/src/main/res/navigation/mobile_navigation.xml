@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_air"
-        android:name="com.example.enapp.ui.airpollution.AirFragment"
+        android:name="com.example.enapp.ui.air.AirFragment"
         android:label="@string/menu_land"
         tools:layout="@layout/fragment_air" />
 

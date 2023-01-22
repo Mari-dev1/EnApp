@@ -1,4 +1,4 @@
-package com.example.enapp.ui.airpollution;
+package com.example.enapp.ui.air;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -31,7 +31,7 @@ public class AirFragment extends Fragment {
 
         final WebView airWebView = binding.idWebviewVisual;
         final ProgressBar loadingPB = binding.idVisual;
-        airWebView.loadUrl("https://sites.google.com/d/1QLlHSRL2t1-82EyUrvloNIWbc118EEAK/p/1J7fbhZgeLGNAADpYkF-50hfFzKkqyD21/edit");
+        airWebView.loadUrl("https://sites.google.com/view/greatdataca/air-pollution-situation-in-kyrgyzstan?authuser=0");
         airWebView.setWebViewClient(new WebViewClient(){
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {

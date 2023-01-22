@@ -1,4 +1,4 @@
-package com.example.enapp.ui.airpollution;
+package com.example.enapp.ui.air;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -7,15 +7,15 @@ import androidx.lifecycle.ViewModel;
 
 
 public class AirViewModel extends ViewModel {
-    private final MutableLiveData<String> mText;
+    private final MutableLiveData<String> xText;
 
     public AirViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is air fragment");
+        xText = new MutableLiveData<>();
+        xText.setValue("This is air fragment");
     }
 
     public LiveData<String> getText() {
-        return mText;
+        return xText;
     }
 
 }
